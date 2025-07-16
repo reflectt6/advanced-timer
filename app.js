@@ -86,9 +86,11 @@ function stop() {
 
 function resetTimer() {
   stop();
+  started = 0;
   phases = [];
   currentPhase = 0;
   timeLeft = 0;
   interval = null;
+  phaseEl.textContent = "凯格尔训练";
   updateDisplay();
 }
