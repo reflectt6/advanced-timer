@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>凯格尔训练</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="icon.png">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body>
+  <h1 id="phase">凯格尔训练</h1>
+  <h2 id="timer">00:00</h2>
+  <form id="config">
+    <label>热身时间 (秒): <input type="number" id="warmup" value="5" /></label><br/>
+    <label>训练时间 (秒): <input type="number" id="work" value="8" /></label><br/>
+    <label>休息时间 (秒): <input type="number" id="rest" value="8" /></label><br/>
+    <label>组数: <input type="number" id="rounds" value="10" /></label><br/>
+    <label>放松时间 (秒): <input type="number" id="cooldown" value="0" /></label><br/>
+    <button type="button" onclick="startTimer()">开始</button>
+    <button type="button" onclick="stop()">暂停</button>
+    <button type="button" onclick="resetTimer()">重置</button>
+  </form>
+  <script src="app.js"></script>
+</body>
+</html>

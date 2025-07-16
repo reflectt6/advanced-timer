@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #b1b1b1;
+  padding: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+
+h2 {
+  font-size: 4em;
+  margin: 0.2em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+input {
+  width: 60px;
+  margin: 5px;
+}
+
+button {
+  font-size: 1.5em;
+  margin: 0.2em;
+  margin-top: 1.0em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 10px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
